@@ -1,6 +1,7 @@
 body {
   font-family: monospace;
   color: #f5e6fa;
+  background: #f8f8f8;
 }
 h1 {
   font-family: "Black Han Sans", sans-serif;
@@ -15,7 +16,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: #d681c1;
+  color: #e58858;
 }
 p {
   margin-top: 0;
@@ -33,7 +34,11 @@ p::first-letter {
   border-radius: 20px;
   background: transparent;
 }
-
+.browser-window {
+  background: #fff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
 .weather-app-domain-name {
   color: #663d63;
   border-top: 1px solid #bdbdbd;
@@ -155,6 +160,6 @@ p::first-letter {
   font-size: 13px;
 }
 .footer {
-  color: #663d63;
   text-align: center;
+  color: #663d63;
 }
