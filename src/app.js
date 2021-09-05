@@ -29,6 +29,7 @@ function handleSubmit(event) {
 
 function showTemperature(response) {
   let cityNameElement = document.querySelector("#city-name");
+  let cityElement = document.querySelector("#city");
   let dateElement = document.querySelector("#current-date");
   let currentTemperatureElement = document.querySelector(
     "#current-temperature"
@@ -36,7 +37,7 @@ function showTemperature(response) {
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   cityNameElement.innerHTML = response.data.name;
-
+  cityElement.innerHTML = response.data.name;
   currentTemperatureElement.innerHTML = Math.round(response.data.main.temp);
   humidityElement.innerHTML = response.data.main.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
