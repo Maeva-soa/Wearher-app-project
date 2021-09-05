@@ -7,11 +7,18 @@ h1 {
 h2 {
   font-size: 28px;
   font-weight: bolder;
-  color: #290f27;
+  color: #2b042b;
 }
 ul {
   list-style: none;
   padding-left: 0;
+}
+a {
+  text-decoration: none;
+  color: #d681c1;
+}
+p::first-letter {
+  text-transform: capitalize;
 }
 
 .container {
@@ -102,8 +109,10 @@ ul {
 .description {
   margin-left: 30px;
 }
+
 .temperature {
   font-size: 50px;
+  color: #2b042b;
 }
 .units {
   position: relative;
