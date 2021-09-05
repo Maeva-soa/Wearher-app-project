@@ -109,3 +109,7 @@ ul {
   top: -22px;
   font-size: 18px;
 }
+.date {
+  text-align: center;
+  font-style: italic;
+}

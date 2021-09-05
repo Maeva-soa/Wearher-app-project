@@ -18,6 +18,7 @@
       rel="stylesheet"
     />
     <script src="https://kit.fontawesome.com/3b70b083ce.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -110,7 +111,7 @@
           </div>
         </div>
       </div>
-        <div class="search-form">
+        <div class="search-form" id="search-form">
         <h1>
           <span class="woogle-blue">W</span>
           <span class="woogle-pink">O</span>
@@ -121,7 +122,7 @@
         </h1>
         <form >
           <div class="input-button">
-            <input type="text"placeholder="  Enter a city" class="city-input-name"> 
+            <input type="text"placeholder="  Enter a city" class="city-input-name" id="city-input-name" > 
           <div class="btn-group" role="group" aria-label="Basic example">
             <button type="submit" class="btn btn-secondary"><i class="fas fa-search-location"></i></button>
             <button type="button" class="btn btn-secondary"><i class="fas fa-map-pin"></i></button>
@@ -132,24 +133,26 @@
         </form>
         
         </div>
+        
         <div class="weather-overview">
-         
+         <p class="date">Last updated at : <span id="current-date"></span> </p>
         <div class="row">
           <div class="col-6 weather-description">
             <img src="https://icons-for-free.com/iconfiles/png/512/fog+foggy+weather+icon-1320196634851598977.png" 
             alt="sunny-icon " width="100px">
-          <span class="temperature">17<span class="units">°C |°F</span></span> <br/>
-          <span class="description">
-            Sunny
+          <span class="temperature" id ="current-temperature"></span><span class="units">°C |°F</span> <br/>
+          <span class="description" id="description">
+   
           </span>
           </div>
           <div class="col-5 weather-update">
-            <h2 class="city-name">Antananarivo</h2> 
+            <h2 class="city-name" id="city-name"></h2> 
             <ul>
               
               
-              <li>Last updated at : <span>15:24</span> </li>
-              <li>Sunday, 05 September </li>
+            
+              <li>Humidity : <span id="humidity" ></span> % </li>
+              <li>Wind: <span id="wind"></span> km/h</li>
               
               
             </ul>
