@@ -114,40 +114,11 @@ function displayCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(currentLocation);
 }
 
-function displayCelsius(event) {
-  event.preventDefault();
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.remove("active");
-  let currentTemperatureElement = document.querySelector(
-    "#current-temperature"
-  );
-  currentTemperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-function displayFahrenheit(event) {
-  event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
-  let currentTemperatureElement = document.querySelector(
-    "#current-temperature"
-  );
-  let fahrenheitTemp = (celsiusTemperature * 9) / 5 + 32;
-  currentTemperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
 function search(city) {
   let apiKey = "0d800c588dc0c17f7124ec074768af05";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
-
-let celsiusTemperature = null;
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsius);
 
 let geolocationButton = document.querySelector("#current");
 geolocationButton.addEventListener("click", displayCurrentLocation);
