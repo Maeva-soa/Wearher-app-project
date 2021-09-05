@@ -45,11 +45,26 @@ function showTemperature(response) {
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
+function currentLocation(position) {
+  let longitude = position.coords.longitude;
+  let latitude = position.coords.latitude;
+  let apiKey = "0d800c588dc0c17f7124ec074768af05";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(showTemperature);
+}
+function displayCurrentLocation(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition(currentLocation);
+}
+
 function search(city) {
   let apiKey = "0d800c588dc0c17f7124ec074768af05";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(showTemperature);
 }
+
+let geolocationButton = document.querySelector("#current");
+geolocationButton.addEventListener("click", displayCurrentLocation);
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
