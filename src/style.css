@@ -1,5 +1,6 @@
 body {
   font-family: monospace;
+  color: #f5e6fa;
 }
 h1 {
   font-family: "Black Han Sans", sans-serif;
@@ -7,7 +8,6 @@ h1 {
 h2 {
   font-size: 28px;
   font-weight: bolder;
-  color: #2b042b;
 }
 ul {
   list-style: none;
@@ -16,6 +16,9 @@ ul {
 a {
   text-decoration: none;
   color: #d681c1;
+}
+p {
+  margin-top: 0;
 }
 p::first-letter {
   text-transform: capitalize;
@@ -28,9 +31,11 @@ p::first-letter {
   padding: 0;
   border: 3px solid #bdbdbd;
   border-radius: 20px;
+  background: transparent;
 }
 
 .weather-app-domain-name {
+  color: #663d63;
   border-top: 1px solid #bdbdbd;
   border-right: 1px solid #bdbdbd;
   border-left: 1px solid #bdbdbd;
@@ -51,11 +56,20 @@ p::first-letter {
   opacity: 1;
 }
 .search-bar {
-  background: #fbfbfb;
+  background: #fff;
+  color: #663d63;
   border: 1px solid #bdbdbd;
   border-radius: 10px;
 }
-
+.weather-wrapper {
+  background-image: url("bgd.jpg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 830px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  opacity: 0.88;
+}
 .woogle-blue {
   color: #1c1ca8;
 }
@@ -69,11 +83,10 @@ p::first-letter {
   color: #be3859;
 }
 .woogle-green {
-  color: #3bf33b;
+  color: #099209;
 }
 .search-form {
   text-align: center;
-  margin-top: 50px;
 }
 
 .city-input-name {
@@ -100,33 +113,33 @@ p::first-letter {
   border-radius: 15px;
   margin-left: 0;
 }
-.weather-description {
-  margin-left: 40px;
-}
+
 .weather-update {
-  margin-top: 10px;
+  margin-top: 40px;
 }
+
 .description {
   margin-left: 30px;
 }
 
 .temperature {
-  font-size: 50px;
-  color: #2b042b;
+  font-size: 60px;
 }
 .units {
   position: relative;
   top: -22px;
-  font-size: 18px;
+  font-size: 20px;
+  color: #e58858;
 }
 .date {
   text-align: center;
   font-style: italic;
+  color: #f5e6fa;
 }
 .weather-forecast {
   margin-top: 20px;
+  padding-bottom: 20px;
   text-align: center;
-  color: #1f0119;
 }
 
 .weather-forecast-date {
@@ -140,4 +153,8 @@ p::first-letter {
 
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+.footer {
+  color: #663d63;
+  text-align: center;
 }

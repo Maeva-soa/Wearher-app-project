@@ -23,7 +23,12 @@
   </head>
   <body>
     <div class="container">
-      <div class="row ">
+      
+
+      
+      <div class="browser-window">
+         <div class="row ">
+        
         <div class="col-10  ">
           <span>
             <img
@@ -51,11 +56,11 @@
           </span>
         </div>
 
-        <div class="col-2 icon-bar browser">
+        <div class="col-2 icon-bar ">
           <img
             src="
           https://image.flaticon.com/icons/png/128/66/66889.png"
-            alt=" reduce windowi icon"
+            alt=" reduce window icon"
             width="14px"
             class="icon reduce-window-icon"
           />
@@ -72,7 +77,9 @@
             class="icon remove-icon-bar"
           />
         </div>
-      </div>
+      </div> 
+        </div>
+      
       <div class="nav-bar">
         <div class="row">
           <div class="col-2">
@@ -111,6 +118,7 @@
           </div>
         </div>
       </div>
+      <div class="weather-wrapper">
         <div class="search-form" id="search-form">
         <h1>
           <span class="woogle-blue">W</span>
@@ -122,7 +130,7 @@
         </h1>
         <form >
           <div class="input-button">
-            <input type="text"placeholder="  Enter a city" class="city-input-name" id="city-input-name" > 
+            <input type="text"placeholder="  Enter a city" autocomplete="off" class="city-input-name" id="city-input-name" > 
           <div class="btn-group" role="group" aria-label="Basic example">
             <button type="submit" class="btn btn-secondary"><i class="fas fa-search-location"></i></button>
             <button type="button" class="btn btn-secondary" id="current"><i class="fas fa-map-pin"></i></button>
@@ -137,17 +145,15 @@
         <div class="weather-overview">
          <p class="date">Last updated at : <span id="current-date"></span> </p>
         <div class="row">
-          <div class="col-6 weather-description">
+          <div class="col-8 weather-conditions">
             <img src="" 
             alt="" width="120px" id="icon">
           <span class="temperature" id ="current-temperature"></span>
-          <span class="units" >°C</span>
-          <br/>
-          <p class="description" id="description">
+          <span class="units" >°C</span><p class="description" id="description">
    
           </p>
           </div>
-          <div class="col-5 weather-update">
+          <div class="col-4 weather-update">
             <h2 id="city-name" ></h2> 
             <ul>
               
@@ -165,7 +171,13 @@
 
         </div>
       <div class="weather-forecast" id="forecast"></div>
-
+    </div>
+    
+    </div>
+    <div class="footer">
+      <small>
+        Coded with passion 😍 by Maeva Rasoahavaniaina, <a href="https://github.com/Maeva-soa/Weather-app-project">open sourced</a> on Github and hosted on <a href="https://www.netlify.com/">Netlify</a> 
+      </small>
     </div>
   </body>
   <script src="src/app.js"></script>

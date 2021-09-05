@@ -45,6 +45,7 @@ function displayForecast(response) {
         forecastHTML +
         `
           <div class="col-2">
+          
             <div class="weather-forecast-date">${formatDay(
               forecastDay.dt
             )}</div>
@@ -59,6 +60,7 @@ function displayForecast(response) {
               )}°</span> <span class ="weather-forecast-temperature-min">${Math.round(
           forecastDay.temp.min
         )}°</span>
+          
             </div>
 
           
