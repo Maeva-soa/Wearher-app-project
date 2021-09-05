@@ -1,3 +1,6 @@
+h1 {
+  font-family: "Black Han Sans", sans-serif;
+}
 .container {
   max-width: 700px;
   background: #fffeff;
@@ -31,4 +34,48 @@
   background: #fbfbfb;
   border: 1px solid #bdbdbd;
   border-radius: 10px;
+}
+.woogle-blue {
+  color: #1c1ca8;
+}
+.woogle-pink {
+  color: #e58858;
+}
+.woogle-orange {
+  color: #dc9d0d;
+}
+.woogle-red {
+  color: #be3859;
+}
+.woogle-green {
+  color: #3bf33b;
+}
+.search-form {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.city-input-name {
+  width: 400px;
+  height: 40px;
+  background: #f5e6fa;
+  border: 1px solid #cea2fd;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+.btn {
+  background: #f5e6fa;
+  color: #1d1515;
+  border: 1px solid #cea2fd;
+  border-radius: 15px;
+  height: 41px;
+  margin-bottom: 3px;
+}
+.btn:hover {
+  background: #d681c1;
+  color: #fcf4f4;
+  border: 1px solid #f5e6fa;
+  border-radius: 15px;
+  margin-left: 0;
 }
